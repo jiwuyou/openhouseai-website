@@ -3,207 +3,70 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>openhouse ai</title>
-    <meta
-      name="description"
-      content="openhouse ai 是一个基于 Termux 的 Android AI 编程环境，一键安装 Ubuntu、OpenCode、Claude Code、Codex CLI 和 Reasonix。"
-    />
+    <meta name="theme-color" content="#0b1728" />
+    <meta name="description" content="OpenHouse 是面向个人设备的开放工作平台：在统一桌面中组织小 App、组件、服务、Runtime 与 AI 助手。" />
+    <title>OpenHouse 平台</title>
     <link rel="stylesheet" href="./assets/styles.css" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="openhouse ai 首页">
-        <span class="brand-mark">oh</span>
-        <span>openhouse ai</span>
-      </a>
-      <nav class="nav" aria-label="主导航">
-        <a href="#features">特点</a>
-        <a href="#start">快速开始</a>
-        <a href="#manual">使用手册</a>
-        <a href="#download">下载</a>
-      </nav>
+      <a class="brand" href="#top" aria-label="OpenHouse 平台首页"><span class="brand-mark">OH</span><span>OpenHouse</span></a>
+      <nav class="nav" aria-label="主导航"><a href="#platform">平台</a><a href="#ecosystem">生态</a><a href="#developers">开发者</a><a class="app-link" href="https://app.stcplus.com">获取应用</a></nav>
     </header>
 
     <main id="top">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Android 手机上的 AI 编程环境</p>
-          <h1>openhouse ai</h1>
-          <p class="lead">
-            在手机上初始化 Ubuntu、OpenCode、Claude Code、Codex CLI 和 Reasonix，
-            尽量让用户不输入终端命令也能开始使用 AI 编程工具。
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="/downloads/openhouse-ai.apk" download>直接下载 APK</a>
-            <a class="button" href="#manual">查看使用手册</a>
-          </div>
+          <p class="eyebrow">An open workspace for personal devices</p>
+          <h1>让服务、应用和 AI<br />在同一个空间协作。</h1>
+          <p class="lead">OpenHouse 是一个可扩展的个人设备工作平台。它用统一桌面连接小 App、本地服务、Runtime、组件市场与 AI 助手，同时把安装和维护交给 WuxianPi。</p>
+          <div class="hero-actions"><a class="button primary" href="#platform">了解平台</a><a class="button" href="https://app.stcplus.com">OpenHouse Android</a></div>
         </div>
-        <div class="terminal-preview" aria-label="终端预览">
-          <div class="terminal-top">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <pre><code>$ ubuntu
-root@localhost:~# claude
-root@localhost:~# reasonix
-root@localhost:~# opencode serve --port 4096</code></pre>
-          <div class="quick-keys">
-            <span>claude</span>
-            <span>reasonix</span>
-            <span>codex</span>
-            <span>oc</span>
-            <span>--continue</span>
-          </div>
+        <div class="system-map" aria-label="OpenHouse 平台结构">
+          <div class="map-core"><span>OpenHouse</span><strong>Workspace</strong></div>
+          <div class="map-node node-one"><i></i><span>Small Apps</span></div>
+          <div class="map-node node-two"><i></i><span>Components</span></div>
+          <div class="map-node node-three"><i></i><span>Runtime</span></div>
+          <div class="map-node node-four"><i></i><span>WuxianPi</span></div>
         </div>
       </section>
 
-      <section id="features" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">产品特点</p>
-          <h2>为手机上的 AI 编程做最小可用闭环</h2>
-        </div>
-        <div class="feature-grid">
-          <article>
-            <h3>一键初始化</h3>
-            <p>引导用户完成后台运行权限、Ubuntu 环境、AI 工具安装和 DeepSeek Key 配置。</p>
-          </article>
-          <article>
-            <h3>广泛模型接入</h3>
-            <p>OpenCode 支持接入多种大模型 API，用户可以继续让 AI 帮自己配置更多服务。</p>
-          </article>
-          <article>
-            <h3>原生网页访问</h3>
-            <p>OpenCode Web 默认端口为 4096，可复制网址到浏览器使用，减少终端操作压力。</p>
-          </article>
-          <article>
-            <h3>终端快捷键</h3>
-            <p>底部快捷键提供 Claude、Reasonix、Codex、OpenCode 和常用参数入口。</p>
-          </article>
+      <section id="platform" class="section dark">
+        <div class="section-heading"><p class="eyebrow">平台结构</p><h2>稳定宿主，动态能力</h2><p>Android 应用提供桌面、工作区与系统能力；本地 Runtime 承载服务；市场持续交付组件、插件与资源。每一层都可以独立演进。</p></div>
+        <div class="layer-grid">
+          <article><span>01</span><h3>桌面与小 App</h3><p>将网页、原生能力和本地服务组织成可打开、可置顶的统一入口。</p></article>
+          <article><span>02</span><h3>组件与服务</h3><p>用清晰的注册表描述端口、健康状态、依赖和工作区入口。</p></article>
+          <article><span>03</span><h3>Runtime</h3><p>让可移植的应用能力在设备本地运行，并由控制面统一发现。</p></article>
+          <article><span>04</span><h3>Hub 与市场</h3><p>分发维修插件、运行资源和组件说明，让能力不必等待 APK 更新。</p></article>
         </div>
       </section>
 
-      <section id="start" class="section split">
-        <div>
-          <p class="eyebrow">快速开始</p>
-          <h2>安装后从菜单进入 AI 软件安装引导</h2>
-          <p>
-            第一次启动会先进入 Termux 终端。点击菜单后，阅读并同意使用说明，
-            再进入 AI 软件安装引导。安装过程通常需要 10 到 30 分钟，建议使用 Wi-Fi。
-          </p>
-        </div>
-        <ol class="steps">
-          <li>开启忽略电池优化，保证安装过程不中断。</li>
-          <li>点击一键初始化，等待 Linux 环境和 AI 工具安装。</li>
-          <li>阅读 DeepSeek Key 说明，打开 DeepSeek 平台申请 API Key。</li>
-          <li>保存并配置 Key，安装完成后启动 OpenCode Web。</li>
-        </ol>
-      </section>
-
-      <section id="manual" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">使用手册</p>
-          <h2>官网手册规划</h2>
-        </div>
-        <div class="manual-list">
-          <a href="#start">初始化安装建议阅读</a>
-          <a href="#terminal">终端、Ubuntu 与底部快捷键</a>
-          <a href="#agents">Claude Code、Codex CLI、Reasonix 简介</a>
-          <a href="#opencode">OpenCode Web 使用说明</a>
+      <section id="ecosystem" class="section">
+        <div class="section-heading"><p class="eyebrow">OpenHouse 生态</p><h2>平台负责承载，WuxianPi 负责照看</h2></div>
+        <div class="ecosystem-grid">
+          <article class="feature accent"><div class="feature-icon">屋</div><h3>OpenHouse Workspace</h3><p>用户每天打开的桌面与工作区。应用入口、服务状态和内容在这里汇合。</p></article>
+          <article class="feature"><div class="feature-icon">巫</div><h3>WuxianPi 管家</h3><p>OpenHouse 的维修助手和 AI 媒介，负责首次安装、更新、诊断与日常维护；它不是另一个平台。</p></article>
+          <article class="feature"><div class="feature-icon">集</div><h3>OpenHouse Hub</h3><p>面向用户和开发者的分发入口，承载经过版本管理的插件、资源与组件信息。</p></article>
         </div>
       </section>
 
-      <section id="terminal" class="section split">
-        <div>
-          <p class="eyebrow">终端</p>
-          <h2>Termux 是入口，Ubuntu 是 AI 工具运行环境</h2>
-          <p>
-            openhouse ai 的 AI 软件主要安装在 Ubuntu 中。底部快捷键可以帮助用户输入
-            exit、ubuntu、claude、reasonix、codex、oc 和 --continue 等常用内容。
-          </p>
-        </div>
-        <div class="note">
-          底部快捷键支持自定义，也支持多页按键。用户可以让 AI 帮自己修改配置。
-        </div>
+      <section id="developers" class="section developer">
+        <div><p class="eyebrow">For developers</p><h2>让一个服务成为桌面上的小 App</h2><p>描述服务端口、健康接口、入口 URL 与 AI 能力层，注册到 OpenHouse 后即可被工作区发现。平台关注清晰契约，不要求业务采用单一技术栈。</p></div>
+        <div class="manifest" aria-label="组件描述示例"><div class="manifest-top"><span></span><span></span><span></span><em>component.json</em></div><pre><code>{
+  "id": "my.workspace.app",
+  "title": "My App",
+  "endpoint": "http://127.0.0.1:3000",
+  "health": "/health",
+  "ai": { "layer": "workspace" }
+}</code></pre></div>
       </section>
 
-      <section id="agents" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">AI Agent</p>
-          <h2>默认安装的 AI 编程软件</h2>
-        </div>
-        <div class="feature-grid">
-          <article>
-            <h3>Claude Code</h3>
-            <p>顶级 AI Agent 工具。可以输入 claude 开始，输入 claude --continue 接续对话。</p>
-          </article>
-          <article>
-            <h3>OpenCode</h3>
-            <p>模型接入范围广，并且原生支持 Web 页面，适合通过浏览器使用。</p>
-          </article>
-          <article>
-            <h3>Reasonix</h3>
-            <p>适配 DeepSeek 的 AI 编程软件，用于保证低成本可用的兜底体验。</p>
-          </article>
-          <article>
-            <h3>Codex CLI</h3>
-            <p>已安装。DeepSeek 暂未官方给出直接接入方式，可后续让 AI 帮忙配置。</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="opencode" class="section split">
-        <div>
-          <p class="eyebrow">OpenCode Web</p>
-          <h2>默认从 Ubuntu 的 /root 启动</h2>
-          <p>
-            新建项目时，OpenCode Web 的项目路径建议先使用 /root。App 菜单中提供
-            启动、停止、重启和自定义端口启动入口。
-          </p>
-        </div>
-        <div class="url-card">
-          <span>默认地址</span>
-          <strong>http://127.0.0.1:4096</strong>
-        </div>
-      </section>
-
-      <section id="download" class="section download">
-        <p class="eyebrow">下载与源码</p>
-        <h2>获取 openhouse ai</h2>
-        <div class="download-grid">
-          <article class="download-card">
-            <h3>openhouse ai 主程序</h3>
-            <p>安装这个 APK 后，从手机终端菜单进入 AI 软件安装引导。</p>
-            <div class="download-actions">
-              <a class="button primary" href="/downloads/openhouse-ai.apk" download>直接下载 APK</a>
-              <a class="button" href="https://github.com/jiwuyou/openhouseai-app">GitHub 源码</a>
-            </div>
-          </article>
-          <article class="download-card">
-            <h3>Termux:API 可选插件</h3>
-            <p>
-              Termux:API 是 Termux 的配套插件，可让终端调用 Android 系统能力，
-              例如剪贴板、通知、相机和传感器。普通初始化不一定需要，部分高级功能可能会用到。
-            </p>
-            <div class="download-actions">
-              <a class="button primary" href="/downloads/termux-api.apk" download>下载 Termux:API APK</a>
-            </div>
-          </article>
-        </div>
-        <p class="muted">如果浏览器没有自动下载，请长按按钮复制链接，或直接打开 /downloads/openhouse-ai.apk。</p>
-        <p class="muted">Termux:API 插件地址：/downloads/termux-api.apk</p>
-        <div class="download-actions compact">
-          <button class="button" type="button" data-copy="538735275">复制 QQ 群号</button>
-        </div>
-        <p class="muted">QQ 交流群：538735275</p>
+      <section class="section callout">
+        <div><p class="eyebrow">OpenHouse for Android</p><h2>从一部 Android 手机开始</h2><p>了解 All-in-One、Native 和 Universal 三种应用形态。正式安装包将在应用官网独立发布。</p></div>
+        <a class="button primary" href="https://app.stcplus.com">前往应用官网</a>
       </section>
     </main>
 
-    <footer class="footer">
-      <span>openhouse ai</span>
-      <span>Source: github.com/jiwuyou/openhouseai-app</span>
-    </footer>
-
-    <script src="./assets/script.js"></script>
+    <footer class="footer"><span>OpenHouse Platform</span><span>Workspace · Runtime · Components · WuxianPi</span></footer>
   </body>
 </html>
