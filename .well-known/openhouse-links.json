@@ -1,13 +1,14 @@
 {
   "schema": 1,
   "kind": "openhouse-links",
-  "revision": 1,
+  "revision": 2,
   "generatedAt": "2026-08-15T00:00:00Z",
   "expiresAt": "2027-08-15T00:00:00Z",
   "urls": {
     "app": "https://app.webefficacy.com/",
     "platform": "https://openhouse.webefficacy.com/",
-    "downloads": "https://app.stcplus.com/"
+    "downloads": "https://app.stcplus.com/",
+    "guide": "https://app.webefficacy.com/guide/"
   },
   "pages": [
     {
@@ -24,6 +25,14 @@
       "icon": "openhouse",
       "urlKey": "platform",
       "order": 20,
+      "enabled": true
+    },
+    {
+      "id": "openhouse.guide",
+      "title": "使用手册",
+      "icon": "book",
+      "urlKey": "guide",
+      "order": 30,
       "enabled": true
     }
   ],
